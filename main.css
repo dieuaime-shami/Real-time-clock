@@ -13,29 +13,36 @@ body{
   align-items: center;
   justify-content: center;
 }
+.clock-back{
+  background-color: rgba(17, 116, 246, 0.575);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
 .main-clock{
   width: 200px;
   height: 200px;
-  border: 10px whitesmoke solid;
+  border: 10px rgb(177, 240, 250) solid;
   border-radius: 50%;
-  padding: 10px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .body-clock{
 width: 100%;
-background-color:rgba(14, 117, 155, 0.488);
+height: 100%;
+border-radius: 50%;
+background-color: rgb(10, 10, 105);
 position: relative;
 
-color: white;
 }
 
 .hours,
 .minutes,
 .seconds{
   position: absolute;
-  width: 50%;
+  width: 45%;
   height: 6px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 40px;
@@ -44,18 +51,39 @@ color: white;
   top: 50%;
 }
 .seconds{
-  background-color: rgb(54, 91, 252);
+  background-color: rgb(54, 156, 252);
+  height: 4px;
 
 }
 .minutes{
- 
-   background-color: rgb(47, 13, 238);
-   transition-timing-function:cubic-bezier(0.1, 2.7, 0.58, 1);
+  background-color: rgb(47, 13, 238);
+  transition-timing-function:cubic-bezier(0.1, 2.7, 0.58, 1);
   transition: all 0.05s;
 }
 .hours{
-  background-color: rgb(10, 2, 172);
+  background-color: rgb(10, 144, 222);
   transition-timing-function:cubic-bezier(0.1, 2.7, 0.58, 1);
   transition: all 0.05s;
- 
+  height: 8px;
+  width: 35%;
+}
+.dot{
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 46%;
+  top: 46%;
+  z-index: 10;
+}
+button{
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: rgb(181, 223, 244);
+ background-color: rgba(17, 116, 246, 0.575);
+    padding: 10px;
+    border: 3px rgb(5, 5, 131) solid;
+    border-radius: 5px;
 }
